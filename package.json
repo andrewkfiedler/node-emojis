@@ -10,9 +10,7 @@
     "mocha": "^2.4.5"
   },
   "directories": {
-    "asset": "./asset",
-    "lib": "./lib",
-    "test": "./test"
+    "asset": "./asset"
   },
   "homepage": "https://github.com/tallesl/emojis",
   "keywords": [
@@ -22,7 +20,6 @@
     "text"
   ],
   "license": "Fair",
-  "main": "./lib/emojis.js",
   "name": "emojis",
   "repository": {
     "type": "git",

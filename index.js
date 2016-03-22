@@ -1,7 +1,7 @@
 'use strict'
 
 const url = require('url')
-const emojis = require('../asset/emojis')
+const emojis = require('./asset/emojis')
 
 exports.replaceWithUnicode = function (input) {
   return replace(input, unicodeForEmoji)
