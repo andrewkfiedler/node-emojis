@@ -1,87 +1,26 @@
-var assert = require('assert')
-  , emojis = require('../lib/emojis.js')
+'use strict'
 
-describe('emojis', function () {
-  describe('replaceWithUnicode', function () {
-    it('should replace an emoji on the beginning of the line', function () {
+const assert = require('assert')
+const emojis = require('../lib/emojis.js')
 
-      // act
-      var actual = emojis.replaceWithUnicode(':beer: is the answer')
-
-      // assert
-      assert.strictEqual(actual, '🍺 is the answer')
-
-    })
-  })
+describe('replaceWithUnicode', () => {
+  it('should replace an emoji on the beginning of the line', () => 
+    assert.strictEqual(emojis.replaceWithUnicode(':beer: is the answer'), '🍺 is the answer')
+  ),
+  it('should replace an emoji on the middle of the line', () =>
+    assert.strictEqual(emojis.replaceWithUnicode('Stop... :hammer: time!'), 'Stop... 🔨 time!')
+  ),
+  it('should replace an emoji on the end of the line', () =>
+    assert.strictEqual(emojis.replaceWithUnicode('Patience is :key:'), 'Patience is 🔑')
+  ),
+  it('should replace consecutive emojis', () =>
+    assert.strictEqual(emojis.replaceWithUnicode(':game_die::game_die:'), '🎲🎲')
+  ),
+  it('should replace lines with just emojis', () =>
+    assert.strictEqual(emojis.replaceWithUnicode(':eyes:/n:tongue:'), '👀/n👅')
+  ),
+  it('should replace even with colons on text', () =>
+    assert.strictEqual(emojis.replaceWithUnicode('Here\'s a math for you: :beer: + :beer: = :beers:'),
+      'Here\'s a math for you: 🍺 + 🍺 = 🍻')
+  )
 })
-
-describe('emojis', function () {
-  describe('replaceWithUnicode', function () {
-    it('should replace an emoji on the middle of the line', function () {
-
-      // act
-      var actual = emojis.replaceWithUnicode('Stop... :hammer: time!')
-
-      // assert
-      assert.strictEqual(actual, 'Stop... 🔨 time!')
-
-    })
-  })
-})
-
-describe('emojis', function () {
-  describe('replaceWithUnicode', function () {
-    it('should replace an emoji on the end of the line', function () {
-
-      // act
-      var actual = emojis.replaceWithUnicode('Patience is :key:')
-
-      // assert
-      assert.strictEqual(actual, 'Patience is 🔑')
-
-    })
-  })
-})
-
-describe('emojis', function () {
-  describe('replaceWithUnicode', function () {
-    it('should replace consecutive emojis', function () {
-
-      // act
-      var actual = emojis.replaceWithUnicode(':game_die::game_die:')
-
-      // assert
-      assert.strictEqual(actual, '🎲🎲')
-
-    })
-  })
-})
-
-describe('emojis', function () {
-  describe('replaceWithUnicode', function () {
-    it('should replace lines with just emojis', function () {
-
-      // act
-      var actual = emojis.replaceWithUnicode(':eyes:/n:tongue:')
-
-      // assert
-      assert.strictEqual(actual, '👀/n👅')
-
-    })
-  })
-})
-
-describe('emojis', function () {
-  describe('replaceWithUnicode', function () {
-    it('should replace even with colons on text', function () {
-
-      // act
-      var actual = emojis.replaceWithUnicode('Here\'s a math for you: :beer: + :beer: = :beers:')
-
-      // assert
-      assert.strictEqual(actual, 'Here\'s a math for you: 🍺 + 🍺 = 🍻')
-
-    })
-  })
-})
-
