@@ -30,7 +30,7 @@ undefined
 The emoji codes used are the ones on [Emoji cheat sheet](http://emoji-cheat-sheet.com/).
 
 Their images are also provided here for you to use
-([images.zip](https://github.com/tallesl/emojis/blob/master/images.zip)), but consider
+([images.zip](https://github.com/tallesl/emojis/blob/master/assets/images.zip)), but consider
 [their copyright](https://github.com/arvida/emoji-cheat-sheet.com/blob/master/LICENSE).
 
 ## Aligning the HTML image
