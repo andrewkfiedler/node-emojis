@@ -1,7 +1,11 @@
 'use strict'
 
+/* global describe, it */
+
 const assert = require('assert')
 const emojis = require('./')
+
+/* eslint-disable no-sequences */
 
 describe('replaceWithHtml', () => {
   it('should replace an emoji on the beginning of the line', () =>
@@ -31,7 +35,7 @@ describe('replaceWithHtml', () => {
 })
 
 describe('replaceWithUnicode', () => {
-  it('should replace an emoji on the beginning of the line', () => 
+  it('should replace an emoji on the beginning of the line', () =>
     assert.strictEqual(emojis.replaceWithUnicode(':beer: is the answer'), '🍺 is the answer')
   ),
   it('should replace an emoji on the middle of the line', () =>
@@ -51,3 +55,5 @@ describe('replaceWithUnicode', () => {
       'Here\'s a math for you: 🍺 + 🍺 = 🍻')
   )
 })
+
+/* eslint-enable no-sequences */
