@@ -1,9 +1,9 @@
 {
   "author": "Talles L <talleslasmar@gmail.com>",
   "bugs": {
-    "url": "https://github.com/tallesl/emojis/issues"
+    "url": "https://github.com/tallesl/node-emojis/issues"
   },
-  "description": "replaces emoji codes to images",
+  "description": "Replaces emoji codes to images.",
   "devDependencies": {
     "coveralls": "^2.11.8",
     "istanbul": "^0.4.2",
@@ -13,7 +13,6 @@
   "directories": {
     "asset": "./asset"
   },
-  "homepage": "https://github.com/tallesl/emojis",
   "keywords": [
     "emoji",
     "emojis",
@@ -24,7 +23,7 @@
   "name": "emojis",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tallesl/emojis.git"
+    "url": "https://github.com/tallesl/node-emojis.git"
   },
   "scripts": {
     "test": "standard && mocha"
