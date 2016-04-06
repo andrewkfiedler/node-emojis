@@ -3,11 +3,11 @@
 const url = require('url')
 const emojis = require('./asset/emojis')
 
-exports.replaceWithUnicode = function (input) {
+exports.unicode = function (input) {
   return replace(input, unicodeForEmoji)
 }
 
-exports.replaceWithHtml = function (input, baseUrl) {
+exports.html = function (input, baseUrl) {
   return replace(input, htmlForEmoji, baseUrl)
 }
 
