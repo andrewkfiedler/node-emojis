@@ -26,7 +26,7 @@ describe('html', () => {
   ),
   it('should replace lines with just emojis', () =>
     assert.strictEqual(emojis.html(':eyes:\n:tongue:'),
-      '<img class="emoji" width="20" height="20" src="eyes.png" alt="eyes">\n\<img class="emoji" width="20" height="20" src="tongue.png" alt="tongue">')
+      '<img class="emoji" width="20" height="20" src="eyes.png" alt="eyes">\n<img class="emoji" width="20" height="20" src="tongue.png" alt="tongue">')
   ),
   it('should replace even with colons on text', () =>
     assert.strictEqual(emojis.html('Here\'s a math for you: :beer: + :beer: = :beers:'),
