@@ -17,7 +17,7 @@ Replaces emoji codes (like `:smiley:`) for emoji images (like :smiley:) or unico
 [dependencies]:        https://david-dm.org/tallesl/node-emojis
 [dependencies-img]:    https://david-dm.org/tallesl/node-emojis.svg
 [devdependencies]:     https://david-dm.org/tallesl/node-emojis#info=devDependencies
-[devDependencies-img]: https://david-dm.org/tallesl/node-emojis/dev-status.svg
+[devdependencies-img]: https://david-dm.org/tallesl/node-emojis/dev-status.svg
 [npm]:                 https://npmjs.com/package/emojis
 [npm-img]:             https://badge.fury.io/js/emojis.svg
 
