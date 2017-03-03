@@ -29,9 +29,9 @@ $ npm install emojis
 $ node
 > var emojis = require('emojis')
 undefined
-> emojis.replaceWithUnicode('I :heart: you!')
+> emojis.unicode('I :heart: you!')
 'I ❤️ you!'
-> emojis.replaceWithHtml('I :heart: you!', 'http://example.org/images/')
+> emojis.html('I :heart: you!', 'http://example.org/images/')
 'I <img class="emoji" width="20" height="20" src="http://example.org/images/heart.png" alt="heart"> you!'
 ```
 
