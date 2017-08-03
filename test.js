@@ -1,7 +1,5 @@
-'use strict'
-
 const assert = require('assert')
-const emojis = require('./')
+const emojis = require('.')
 
 /* global describe, it */
 

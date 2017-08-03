@@ -1,13 +1,11 @@
-'use strict'
-
 const url = require('url')
-const emojis = require('./asset/emojis')
+const emojis = require('./characters')
 
-exports.unicode = function (input) {
+exports.unicode = (input) => {
   return replace(input, unicodeForEmoji)
 }
 
-exports.html = function (input, baseUrl) {
+exports.html = (input, baseUrl) => {
   return replace(input, htmlForEmoji, baseUrl)
 }
 

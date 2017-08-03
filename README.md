@@ -4,22 +4,22 @@
 [![][coverage-img]][coverage]
 [![][dependencies-img]][dependencies]
 [![][devdependencies-img]][devdependencies]
-[![][npm-img]][npm]
+[![][version-img]][version]
 
 Replaces emoji codes (like `:smiley:`) for emoji images (like :smiley:) or unicode characters (like 😃).
 
 [logo]:                #-emojis
-[logo-img]:            asset/logo.gif
+[logo-img]:            https://raw.githubusercontent.com/tallesl/node-emojis/master/logo.gif
 [build]:               https://travis-ci.org/tallesl/node-emojis
 [build-img]:           https://travis-ci.org/tallesl/node-emojis.svg
-[coverage]:            https://coveralls.io/r/tallesl/node-emojis?branch=master
-[coverage-img]:        https://coveralls.io/repos/tallesl/node-emojis/badge.svg?branch=master
+[coverage]:            https://coveralls.io/r/tallesl/node-emojis
+[coverage-img]:        https://coveralls.io/repos/tallesl/node-emojis/badge.svg
 [dependencies]:        https://david-dm.org/tallesl/node-emojis
 [dependencies-img]:    https://david-dm.org/tallesl/node-emojis.svg
 [devdependencies]:     https://david-dm.org/tallesl/node-emojis#info=devDependencies
 [devdependencies-img]: https://david-dm.org/tallesl/node-emojis/dev-status.svg
-[npm]:                 https://npmjs.com/package/emojis
-[npm-img]:             https://badge.fury.io/js/emojis.svg
+[version]:             https://npmjs.com/package/emojis
+[version-img]:         https://badge.fury.io/js/emojis.svg
 
 ## Usage
 
@@ -27,7 +27,7 @@ Replaces emoji codes (like `:smiley:`) for emoji images (like :smiley:) or unico
 $ npm install emojis
 (...)
 $ node
-> var emojis = require('emojis')
+> let emojis = require('emojis')
 undefined
 > emojis.unicode('I :heart: you!')
 'I ❤️ you!'
@@ -38,11 +38,10 @@ undefined
 ## Emoji codes and images
 
 The emoji codes used are the ones on [Emoji cheat sheet].
-
 Their images are also provided here for you to use ([images.zip]), but consider [its copyright].
 
 [Emoji cheat sheet]: http://emoji-cheat-sheet.com
-[images.zip]:        https://github.com/tallesl/emojis/blob/master/asset/images.zip
+[images.zip]:        https://raw.githubusercontent.com/tallesl/node-emojis/master/images.zip
 [its copyright]:     https://github.com/arvida/emoji-cheat-sheet.com/blob/master/LICENSE
 
 ## Aligning the HTML image
