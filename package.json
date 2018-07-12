@@ -5,6 +5,8 @@
   },
   "description": "Replaces emoji codes to images.",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "coveralls": "^2.13.1",
     "istanbul": "^0.4.5",
     "mocha": "^3.5.0",
@@ -22,8 +24,10 @@
     "type": "git",
     "url": "https://github.com/tallesl/node-emojis.git"
   },
+  "main": "compiled.js",
   "scripts": {
-    "test": "standard && mocha"
+    "test": "standard && mocha",
+    "build": "babel index.js --out-file compiled.js --presets es2015"
   },
   "version": "1.0.10"
 }
